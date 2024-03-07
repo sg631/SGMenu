@@ -15,9 +15,10 @@ p.sgm {
 }
 button.sgm {
   border: 3px solid white; padding: 10px;
-  background-color: rgb(40, 40, 40)
+  background-color: rgb(40, 40, 40);
   color: white;
-  cursor: pointer
+  cursor: pointer;
+  border-radius:25px;
 }
 button.sgm:hover {
   background-color: rgb(50, 50, 50)
