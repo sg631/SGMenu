@@ -28,7 +28,6 @@ document.addEventListener('keydown', function (e) {
     menu.style.display = "none"
     menu.style.display = "block"
     menu.style.animationName = "close"
-    menu.style.display = "none"
   }
     console.log(menuOpenState)
 });
