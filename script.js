@@ -82,12 +82,12 @@ document.addEventListener('keydown', function (e) {
     sgm_menu.style.animationName = "close"
     
   }
-    console.log(menuOpenState)
+    //console.log(menuOpenState)
 });
 function findAllVariables() { 
       for (let variable in document) { 
          if (window.hasOwnProperty(variable) && !(variable.slice(0, 1) == "on")){
-             console.log(variable); 
+             //console.log(variable); 
           } 
      } 
 }
