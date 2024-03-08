@@ -14,6 +14,13 @@ p.sgm {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
+.sgm#sgmexec::-webkit-scrollbar {
+  display: none;
+}
+.sgm#sgmexec {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 textarea.sgm {
   outline:none;
   resize:none;
@@ -51,7 +58,7 @@ button.sgm:hover {
 button.sgm:active {
   background-color: rgb(20, 20, 20)
 }
-</style><div class="sgm" id="menu" style="border-radius: 0px 0px 0px 40px; position: fixed; top: 0; right: 0; width: 300px; height: 300px; background-color: rgba(30, 30, 30, 1); z-index: 9999;border: 3px solid white; padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; display:none; animation-duration:0.2s;"><br><p class="sgm" style="font-size:20pt">SGMenu</p><button id="sgmab" class="sgm sgmhorizcenter">Open in A:B</button><br><br><p class="sgm">Execute Javascript</p><textarea id="sgmexec" class="sgm" style="top:63%; position:absolute;"></textarea><button class="sgm" style="top:65%; right:20px;position:absolute;" id="sgmexecbutton" onclick="eval(sgm_exec.value)">Execute</button></div>`
+</style><div class="sgm" id="menu" style="border-radius: 0px 0px 0px 40px; position: fixed; top: 0; right: 0; width: 300px; height: 100%; background-color: rgba(30, 30, 30, 1); z-index: 9999;border: 3px solid white; padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; display:none; animation-duration:0.2s;"><br><p class="sgm" style="font-size:20pt">SGMenu</p><button id="sgmab" class="sgm sgmhorizcenter">Open in A:B</button><br><br><p class="sgm">Execute Javascript</p><textarea id="sgmexec" class="sgm" style=""></textarea><button class="sgm" style="" id="sgmexecbutton" onclick="eval(sgm_exec.value)">Execute</button></div>`
 document.body.appendChild(menucontainer);
 const sgm_menu = document.getElementById("menu")
 const sgm_execbttn = document.getElementById("sgmexecbutton")
